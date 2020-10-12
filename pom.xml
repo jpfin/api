@@ -95,14 +95,14 @@
     <scm>
         <connection>scm:git:https://github.com/jpfin/api.git</connection>
         <url>http://github.com/jpfin/api</url>
-        <developerConnection>scm:git:https://github.com/jpfinapi.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/jpfin/api.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
     <distributionManagement>
         <repository>
             <id>github</id>
             <name>J P Fin proto library</name>
-            <url>https://maven.pkg.github.com/perrinsjason/jpfinapi</url>
+            <url>https://maven.pkg.github.com/perrinsjason/jpfin/api</url>
         </repository>
     </distributionManagement>
     
