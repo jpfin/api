@@ -102,7 +102,7 @@
         <repository>
             <id>github</id>
             <name>J P Fin proto library</name>
-            <url>https://maven.pkg.github.com/perrinsjason/jpfin/api</url>
+            <url>https://maven.pkg.github.com/jpfin/api</url>
         </repository>
     </distributionManagement>
     
