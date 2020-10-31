@@ -13,6 +13,8 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <rsocketRpcVersion>0.2.17</rsocketRpcVersion>
         <protobufVersion>3.13.0</protobufVersion>
+        <git.project>${project.artifactId}</git.project>
+        <git.orginisation>jfin</git.orginisation>
     </properties>
 
     <dependencies>
@@ -93,16 +95,16 @@
     </build>
 
     <scm>
-        <connection>scm:git:https://github.com/jpfin/api.git</connection>
-        <url>http://github.com/jpfin/api</url>
-        <developerConnection>scm:git:https://github.com/jpfin/api.git</developerConnection>
+        <connection>scm:git:https://github.com/${git.orginisation}/${git.project}.git</connection>
+        <url>http://github.com/${git.orginisation}/${git.project}</url>
+        <developerConnection>scm:git:https://github.com/${git.orginisation}/${git.project}.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>J P Fin proto library</name>
-            <url>https://maven.pkg.github.com/jpfin/api</url>
+            <name>Project repo</name>
+            <url>https://maven.pkg.github.com/${git.orginisation}/${git.project}</url>
         </repository>
     </distributionManagement>
     
