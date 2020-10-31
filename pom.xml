@@ -14,7 +14,7 @@
         <rsocketRpcVersion>0.2.17</rsocketRpcVersion>
         <protobufVersion>3.13.0</protobufVersion>
         <git.project>${project.artifactId}</git.project>
-        <git.orginisation>jfin</git.orginisation>
+        <git.orginisation>jpfin</git.orginisation>
     </properties>
 
     <dependencies>
