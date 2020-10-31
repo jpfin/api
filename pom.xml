@@ -96,7 +96,7 @@
 
     <scm>
         <connection>scm:git:https://github.com/${git.orginisation}/${git.project}.git</connection>
-        <url>http://github.com/${git.orginisation}/${git.project}</url>
+        <url>https://github.com/${git.orginisation}/${git.project}</url>
         <developerConnection>scm:git:https://github.com/${git.orginisation}/${git.project}.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
