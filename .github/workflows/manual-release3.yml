@@ -34,7 +34,7 @@ jobs:
             git config --global hub.protocol https
 
       - name: Prepare and perform release
-          run: mvn -B release:prepare release:perform
+          run: mvn -B release:prepare release:perform -Dusername=GITHUB_ACTOR -Dpassword=GITHUB_TOKEN
         env:
           GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
