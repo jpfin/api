@@ -19,7 +19,8 @@ jobs:
         uses: actions/setup-java@v1.4.2
         with:
           java-version: 14
-          server-id: github
+          server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
+          settings-path: ${{ github.workspace }} # location for the settings.xml file
       - name: Configure git
         run: |
           git config --global committer.email "noreply@github.com"
