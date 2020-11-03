@@ -96,16 +96,16 @@
     </build>
 
     <scm>
-        <connection>scm:git:https://github.com/${git.orginisation}/${git.project}.git</connection>
-        <url>https://github.com/${git.orginisation}/${git.project}</url>
-        <developerConnection>scm:git:https://github.com/${git.orginisation}/${git.project}.git</developerConnection>
+        <connection>scm:git:https://github.com/jpfin/api.git</connection>
+        <developerConnection>scm:git:https://github.com/jpfin/api.git</developerConnection>
+        <url>https://github.com/jpfin/api</url>
         <tag>HEAD</tag>
     </scm>
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>Project repo</name>
-            <url>https://maven.pkg.github.com/${git.orginisation}/${git.project}</url>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/jpfin/api</url>
         </repository>
     </distributionManagement>
     
