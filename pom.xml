@@ -13,7 +13,7 @@
         <protobufVersion>3.13.0</protobufVersion>
         <git.project>${project.artifactId}</git.project>
         <git.orginisation>jpfin</git.orginisation>
-        <scm>github</scm>
+        <project.scm.id>github</project.scm.id>
     </properties>
 
     <dependencies>
