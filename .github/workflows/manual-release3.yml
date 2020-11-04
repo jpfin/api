@@ -1,4 +1,7 @@
+# Based on https://dev.to/anthonyikeda/github-actions-maven-artifactory-4h65
+
 name: Release (Manual) 3
+
 
 on: 
   workflow_dispatch:
@@ -31,10 +34,11 @@ jobs:
           git config --global committer.name "GitHub"
           git config --global author.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git config --global author.name "${GITHUB_ACTOR}":
-          git config --global hub.protocol https
+#         git config --global hub.protocol https
 
       - name: Prepare and perform release
-        run: mvn -B release:prepare release:perform
+        run: |
+          mvn -B release:prepare release:perform
         env:
           SCM_USERNAME_REF: 'github-actions'
           SCM_TOKEN_REF: ${{ secrets.GITHUB_TOKEN }}
