@@ -95,7 +95,7 @@
 
     <scm>
         <connection>scm:git:https://github.com/jpfin/api.git</connection>
-        <developerConnection>scm:git:https://github.com/jpfin/api.git</developerConnection>
+        <developerConnection>scm:git:http://github.com/jpfin/api.git</developerConnection>
         <url>https://github.com/jpfin/api</url>
         <tag>HEAD</tag>
     </scm>
