@@ -9,8 +9,6 @@ jobs:
     steps:
       - name: Checkout project
         uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.GIT_TOKEN }}
       - name: Cache local Maven repository
         uses: actions/cache@v2
         with:
@@ -21,7 +19,7 @@ jobs:
       - name: Setup Java JDK
         uses: actions/setup-java@v1.4.2
         with:
-          java-version: 14
+          java-version: 11
           server-id: github
       - name: Configure git
         run: |
@@ -37,8 +35,6 @@ jobs:
       - name: Rollback if failure
         if: ${{ failure() }}
         run: mvn --batch-mode release:rollback
-        env:
-          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
 
 
   artifact:
