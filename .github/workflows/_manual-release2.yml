@@ -1,4 +1,4 @@
-name: Release (Manual) 2
+name: z old Release (Manual) 2
 
 on: 
   workflow_dispatch:

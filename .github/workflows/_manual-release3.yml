@@ -1,6 +1,6 @@
 # Based on https://dev.to/anthonyikeda/github-actions-maven-artifactory-4h65
 
-name: Release (Manual) 3
+name: z old  Release (Manual) 3
 
 
 on: 
