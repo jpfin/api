@@ -54,13 +54,11 @@ jobs:
           git config --global author.name "${GITHUB_ACTOR}":
 
       - name: Prepare and perform release
-        run: |
-        echo GITHUB_ACTOR
-        mvn -B release:prepare release:perform
+        run: mvn -B release:prepare release:perform
         env:
           GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
 
       - name: Rollback if failure
         if: ${{ failure() }}
-        run: ./mvnw --batch-mode release:rollback
+        run: mvn --batch-mode release:rollback
