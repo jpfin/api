@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package restapi.connection.v1;
+
+option csharp_namespace = "restapi.connection.V1";
+option go_package = "connectionv1";
+option java_multiple_files = true;
+option java_outer_classname = "ConnectionProto";
+option java_package = "restapi.connection.v1";
+option php_namespace = "restapi\\connection\\V1";
+
+
+enum ConnectionType {
+  CONNECTION_TYPE_INVALID = 0;
+  CONNECTION_TYPE_UNSET = 1;
+  CONNECTION_TYPE_SANDBOX = 2;
+  CONNECTION_TYPE_PRODUCTION = 3;
+}
+
+message Connection {
+
+  string secret_token = 1;
+  string publish_token = 2;
+  string version = 3;
+  ConnectionType type = 4;
+
+}

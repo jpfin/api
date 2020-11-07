@@ -57,6 +57,7 @@ message QuoteMap{
 }
 
 message QuoteListRequest {
+
 }
 
 message QuoteListResponse {
