@@ -4,7 +4,7 @@
 
     <groupId>jpfin</groupId>
     <artifactId>api</artifactId>
-    <version>1.0.17</version>
+    <version>1.0.18-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -97,7 +97,7 @@
         <connection>scm:git:https://github.com/jpfin/api.git</connection>
         <developerConnection>scm:git:http://github.com/jpfin/api.git</developerConnection>
         <url>https://github.com/jpfin/api</url>
-        <tag>api-1.0.17</tag>
+        <tag>HEAD</tag>
     </scm>
     <distributionManagement>
         <repository>
