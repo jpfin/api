@@ -1,5 +1,4 @@
 name: CI with Maven
-# based on maven package default and https://dev.to/anthonyikeda/github-actions-maven-artifactory-4h65
 # Triggered on push, main pull or manually
 
 on: 
